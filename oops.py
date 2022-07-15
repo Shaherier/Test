@@ -103,25 +103,26 @@ class Developer(Employee):
 
 
 
-class Manager(Employee):
-    def __init__(self, FN , LN, exp,pay, emp = None):
-        super().__init__(FN,LN,exp,pay)
-        if emp is None:
-            self.emp = []
-        else:
-            self.emp = emp
+# class Manager(Employee):
+#     def __init__(self, FN , LN, exp,pay, emp = None):
+#         super().__init__(FN,LN,exp,pay)
+#         if emp is None:
+#             self.emp = []
+#         else:
+#             self.emp = emp
     
-    def add_employee(self, employee):
-        if employee not in self.emp:
-            self.emp.append(employee)
+#     def add_employee(self, employee):
+#         if employee not in self.emp:
+#             self.emp.append(employee)
     
-    def remove_employee(self, employee):
-        if employee in self.emp:
-            self.emp.remove(employee)
-    @property
-    def show_employee(self):
-        for employee in self.emp:
-            print("->" ,employee.full_name)
+#     def remove_employee(self, employee):
+#         if employee in self.emp:
+#             self.emp.remove(employee)
+#     @property
+
+#     def show_employee(self):
+#         for employee in self.emp:
+#             print("->" ,employee.full_name)
 
 
 
@@ -200,5 +201,6 @@ def sum(**number):
 
 
 
-g = sum( s1 = 1, s2 = 2, s3 = 3, s4 = 4)
+# note: you see we can are not using dictionary or list. we using unique keys and it value for unlimited amount of time
+g = sum( s1 = 1, s2 = 2, s3 = 3, s4 = 4) 
 print(g)
